@@ -28,4 +28,48 @@
         </style>
   </head>
   <body>
-    
+    var n = 0;
+    $("#som").click(function(){
+        var n1 = $("#N1").val();
+        console.log("n1 ", n1);
+       var n2 = $("#N2").val();
+       console.log("n2 ",n2);
+        console.log(n1 -(- n2));
+       n++;
+    $("table").append("<tr><td>"+n+"</td><td>"+n1+"</td><td>+</td><td>"+n2+"</td><td>"+(n1 - (-n2))+"</td></tr>");
+    });
+ 
+    $("#sot").click(function(){
+        var n1 = $("#N1").val();
+        console.log("n1 ", n1);
+       var n2 = $("#N2").val();
+       console.log("n2 ",n2);
+        console.log(n1 - n2);
+       n++;
+    $("table").append("<tr><td>"+n+"</td><td>"+n1+"</td><td>-</td><td>"+n2+"</td><td>"+(n1 -n2)+"</td></tr>");
+    });
+ 
+    $("#mol").click(function(){
+        var n1 = $("#N1").val();
+        console.log("n1 ", n1);
+       var n2 = $("#N2").val();
+       console.log("n2 ",n2);
+        console.log(n1 * n2);
+       n++;
+    $("table").append("<tr><td>"+n+"</td><td>"+n1+"</td><td>*</td><td>"+n2+"</td><td>"+(n1 * n2)+"</td></tr>");
+    });
+ 
+    $("#frat").click(function(){
+        var n1 = $("#N1").val();
+        console.log("n1 ", n1);
+       var n2 = $("#N2").val();
+       console.log("n2 ",n2);
+        console.log(n1 / n2);
+       n++;
+    $("table").append("<tr><td>"+n+"</td><td>"+n1+"</td><td>/</td><td>"+n2+"</td><td>"+(n1 / n2)+"</td></tr>");
+    });
+    </script>
+  </body>
+</html>
+ 
+ 
